@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+</head>
+<body>
+
+    <h1>Do some math</h1>
+    <br>
+
+    <table>
+        <thead>
+        <tr>
+            <th>op1</th>
+            <th>op</th>
+            <th>op2</th>
+            <th>result</th>
+        </tr>
+        <tbody>
+        <tr data-th-each="op : ${operations}">
+            <td data-th-text="${op.op1}"></td>
+            <td data-th-text="${op.op}"></td>
+            <td data-th-text="${op.op2}"></td>
+            <td data-th-text="${op.result}"></td>
+        </tr>
+        </tbody>
+        </thead>
+    </table>
+    <div>
+        <a data-th-href="@{/newOp}">New Operation</a>
+    </div>
+</body>
+</html>

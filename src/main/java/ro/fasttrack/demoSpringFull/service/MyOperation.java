@@ -1,0 +1,12 @@
+package ro.fasttrack.demoSpringFull.service;
+
+/**
+ * @author flo
+ * @since 29.06.2022.
+ */
+
+@FunctionalInterface
+public interface MyOperation {
+    double doOp(int nr1, int nr2);
+//    double anotherDoOp(int nr1, int nr2);
+}

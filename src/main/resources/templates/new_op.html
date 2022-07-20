@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+</head>
+<body>
+    <h1>new Operation</h1>
+    <hr>
+
+    <form action="#" data-th-action="@{/newOperation}" data-th-object="${operation}" method="POST">
+
+        op1<br>
+        <input type="text" data-th-field="*{op1}"><br><br>
+
+        op<br>
+        <input type="text" data-th-field="*{op}"><br><br>
+
+        op2<br>
+        <input type="text" data-th-field="*{op2}"><br><br>
+
+        <button type="submit"> Compute Operation</button>
+    </form>
+</div>
+
+<br>
+<div>
+    <a th:href="@{/form}">Go Back</a>
+</div>
+</body>
+</html>
