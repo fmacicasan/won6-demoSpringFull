@@ -17,9 +17,7 @@ public class Operation {
     private Integer op1;
     @Column(name = "nr2")
     private Integer op2;
-    @Column(name = "op")
     private String op;
-    @Column(name = "result")
     private double result;
 
     public Operation() {

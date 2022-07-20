@@ -28,7 +28,7 @@ public class OperationService {
 
     public List<OperationDTO> listOperations() {
         List<OperationDTO> operations = new ArrayList<>();
-        for (Operation operation : operationRepository.findAll()) {
+        for (Operation operation : operationRepository.findByOp("/")) {
             operations.add(new OperationDTO(operation));
         }
         return operations;
